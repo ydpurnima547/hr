@@ -1,38 +1,355 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&family=Libre+Baskerville&family=Lobster&family=Lora:wght@500&family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+  }
+  .fa-bars
+  {
+ font-size: 30px;}
+  .nav-item a {
+    color:#0047ab;
+    position: relative;
+    text-decoration: none;
+  }
+  .nav-item a:hover {
+color:rgb(113, 222, 193);
+
+  }
+  .btn{
+    width:100px;
+    height:40px;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: none !important;
+    border-radius: 8px;
+    box-shadow: none !important;
+    font-family: "JetBrains Mono",monospace;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    color: #fcffff;
+  }
+  .btn:hover {
+    color: #fcffff;
+    transform: translateY(0) scale(1.1);
+  }
+  h1{
+    color:#0047ab;
+  }
+  .bt{
+    width:130px;
+    height:40px;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: none !important;
+    box-shadow: none !important;
+    font-family: "JetBrains Mono",monospace;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    color: #fcffff;
+  }
+ .bt span{
+ display: inline-block;
+ cursor: pointer;
+ transition:0.5s;
+     }
+  .bt span:after{
+   content: '';
+   position: absolute;
+   top:0;
+   transition: 0.5s;
+   opacity: 0;
+  }
+  .bt:hover span{
+    padding-left:16px;
+  }
+  .bt:hover span:after{
+    opacity: 1;
+  }
+  .home {
+    
+    width: fit-content;
+    border-radius: 50px;
+    padding: 40px 0px 0px 0%;
+    border-width: 5px;
+    padding: 20% 0% 8% 0%;   
+  }
+ 
+ 
+  @media (max-width: 520px) {
+    .name h1{
+    font-size:10px;
+    margin-right:120px;
+    }
+  } 
+  @media (max-width: 420px) {
+    .name h1{
+    font-size:10px;
+   margin-right:120px;
+    }
+  } 
+  .about .container{
+    width:100%;
+   min-height: auto;
+  }
+  .service{
+    margin:10px 0px 70px 0px;
+  }
+  .service .card{
+    border-radius: 0px 17px 0px 0px ;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border:none !important;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+  }
+  .service p {
+    color:white;
+    font-size:18px;
+    font-weight: 200;
+  }
+  .service i{
+    color:white;
+    font-size:22px;
+  }
+
+  @media (max-width: 768px) {
+    h4{
+      font-size:16px;
+     margin-right:120px;}
+    .service{
+    min-height:350 px;
+    margin:2px 0px 30px 0px;
+    }
+    
+    .service p {
+      color:white;
+      font-size:18px;
+      font-weight: 200;
+    }
+    .service i{
+      color:white;
+      font-size:16px;
+    }
+
+  } 
+  @media (max-width:520px){
+    h4{
+      font-size:16px;
+     margin-right:120px;}
+    .service .card {
+                 flex-direction:column;
+      
+    }.service  p {
+      font-size:16px;
+    }
+    .service .card a{
+      text-decoration: none !important;
+      justify-content: center;
+      color:rgb(155, 155, 248);
+    }
+    .service {
+      margin:2px 0px 30px 0px;
+    }
+    }
+  @media (max-width: 420px) {
+    h4{
+      font-size:16px;
+     margin-right:120px;}
+    .service p {
+      color:white;
+      font-size:16px;
+      font-weight: 200;
+    }
+    .service i{
+      color:white;
+      font-size:22px;
+    }
+    .service .card a{
+      text-decoration: none !important;  
+      color:rgb(155, 155, 248);
+    }
+ 
+  }
+  .btt{
+    border-radius: 12px;
+    background: white;
+    padding: 10px 14px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 3px 3px 0px;
+  cursor: pointer; 
+    font-size: 18px; 
+    font-weight: 900;
+    text-decoration: none !important;
+  }
+.mywork .card-body{
+  background-color: rgb(228, 239, 240);
+}
+@media (max-width:768px){
+  .mywork .card {
+    margin:20px 2px;         
+    flex-direction:column;
+  
+  }.mywork  p {
+    font-size:19px;
+  }
+  .mywork .card a{
+    text-decoration: none !important;
+    justify-content: center;
+    color:rgb(155, 155, 248);
+  }
+ 
+  }
+@media (max-width:520px){
+  .mywork .card {
+    margin:10px 2px;         
+    flex-direction:column;
+    justify-content:center;
+  }.mywork  p {
+    font-size:16px;
+  }
+  .mywork .card a{
+    text-decoration: none !important;
+    justify-content: center;
+    color:rgb(155, 155, 248);
+  }
+  .mywork {
+    margin-left:0px !important;
+  }
+  }
+  @media (max-width:420px){
+    .mywork .card {
+      margin:10px 2px;         
+      flex-direction:column;
+      justify-content:center;
+    }.mywork  p {
+      font-size:16px;
+    }
+    .mywork .card a{
+      text-decoration: none !important;
+      justify-content: center;
+      color:rgb(155, 155, 248);
+    }
+    .mywork {
+      margin-left:0px !important;
+    }
+    }
+
+ img{
+height:130px;
+}
+.btmw{
+  margin:5px 0px 5px 0px;
+  padding:7px; 
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
   text-align: center;
+  color:white;
+  cursor: pointer; 
+  text-decoration: none !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btmw:hover{
+  color: white !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.cotact .container
+{
+   position: relative;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width:100%;
+  height:100%;
+  padding:20px 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-box{
+ 
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  background-color:#fff;
+  box-shadow:0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+.left{
+  height:100%;
+  background-color: #E9E4F0;
+  background-size:cover;
+}
+.right{
+  height:100%;
+  background-color: #F2F2F2;
+  background-size:cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.field{
+  width: 100%;
+  padding:0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0,0,0,0);
+  font-size:1.1rem;
+  margin-bottom:22px;
+  transition:.3s;
+}
+
+.field:focus{
+  background-color: #fff;
+  border:2px solid rgba(30,85,250,0.47)
+}
+.area{
+  min-height:150px;
+}
+.bt1{
+  padding:0.5rem 1rem;
+  font-size:1.1rem;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: none !important;
+  cursor: pointer;
+  outline:none;
+  border:none;
+  color: #fff;
+}
+
+@media screen and (max-width:880px){
+  .contact-box{
+    grid-template-columns:1fr;
   }
-  to {
-    transform: rotate(360deg);
+  
+  tr td:first-child{
+    margin:2px 0px 2px 0px;
+   
+  }
+  tr td{
+    padding:4px 0px 2px 20px;
+  
   }
 }
+  .left h3{
+    font-weight:600;
+    margin-top:20px;
+   
+  }
+  tr td:first-child{
+    margin:2px 0px 2px 0px;
+   
+  }
+  tr td{
+    padding:4px 0px 2px 20px;
+
+  }
+  .footer{
+    background-color: #E9E4F0;
+  }
+  .footer i{
+    font-size:28px;
+    color:#0047ab;
+  }
+  .my-elements .element {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+  }
+  
